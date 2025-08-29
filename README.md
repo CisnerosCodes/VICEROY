@@ -74,14 +74,15 @@ Experience the full resource collection at: **[cisneroscodes.github.io/VISEROY](
 
 ```
 VISEROY/
-├── docs/                    # GitHub Pages website
-│   ├── index.html          # Main workshop showcase
-│   └── software.html       # Comprehensive tools guide
-├── resources/              # Workshop materials
-│   ├── pdfs/              # Workshop guides & documentation
-│   ├── images/            # Flyers & promotional materials
-│   └── notes/             # Supporting references
-└── README.md              # You are here!
+├── 📄 README.md                           # Main project documentation (6.2KB)
+├── 📂 docs/                               # Website/Documentation files
+│   ├── 📄 index.html                      # Main landing page (8.7KB)
+│   └── 📄 software.html                   # Software documentation page (21.6KB)
+└── 📂 resources/                          # Materials (download slides for best use)
+    ├── 📂 Week_1_NetworkRecon/            # Network reconnaissance training materials
+    ├── 📂 Week_2_Password_Hacking_101/    # Password security and hacking techniques
+    ├── 📂 Week_3_Phishing_for_Admins/     # Phishing attack simulations and defense
+    └── 📂 Week_4_The_Web_is_a_Minefield/  # Web security vulnerabilities and exploits
 ```
 
 ## 🎓 Educational Impact
@@ -119,7 +120,7 @@ This program was designed to:
 ## 📈 Program Achievements
 
 - ✅ **4 comprehensive workshops** delivered successfully
-- 🎯 **10+ cybersecurity tools** covered in detail  
+- 🎯 **20+ cybersecurity tools** covered in detail  
 - 📚 **Complete resource library** with guides and documentation
 - 🌐 **Professional website** showcasing all materials
 - 🎥 **Video content** for enhanced learning experience
