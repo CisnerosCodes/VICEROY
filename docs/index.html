@@ -3,71 +3,320 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viceroy Cybersecurity Resources</title>
+  <title>Viceroy Cybersecurity Scholar Resources | CisnerosCodes</title>
+  <meta name="description" content="Cybersecurity workshop resources and materials from the Viceroy Scholar program at Texas A&M University–San Antonio">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 2rem;
       line-height: 1.6;
-      background: #f9f9f9;
+      background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 50%, #8b5cf6 100%);
+      min-height: 100vh;
       color: #333;
     }
-    h1 {
-      color: #1a73e8;
-      text-align: center;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin: 1rem 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    }
-    iframe {
-      display: block;
-      margin: 2rem auto;
-      border: none;
+    
+    .container {
+      background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      padding: 2rem;
+      box-shadow: 0 8px 32px rgba(79, 70, 229, 0.2);
+      border: 1px solid rgba(79, 70, 229, 0.1);
     }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    h1 {
+      color: #4f46e5;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(45deg, #4f46e5, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .subtitle {
+      color: #64748b;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+    
+    .intro {
+      background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #4f46e5;
+      margin: 2rem 0;
+    }
+    
+    .workshop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .workshop-card {
+      background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .workshop-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(45deg, #4f46e5, #06b6d4);
+    }
+    
+    .workshop-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(79, 70, 229, 0.15);
+      border-color: #4f46e5;
+    }
+    
+    .workshop-card h3 {
+      color: #4f46e5;
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+    }
+    
+    .workshop-card p {
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    .status-badge {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 25px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .completed {
+      background: linear-gradient(45deg, #10b981, #059669);
+      color: white;
+      box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+    }
+    
+    .upcoming {
+      background: #fff3cd;
+      color: #856404;
+    }
+    
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      margin: 2rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(79, 70, 229, 0.2);
+      border: 2px solid rgba(79, 70, 229, 0.1);
+    }
+    
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
     .button {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      background: #1a73e8;
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      background: linear-gradient(45deg, #4f46e5, #06b6d4);
       color: white;
       font-weight: bold;
       text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.2s;
+      border-radius: 25px;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 0.9rem;
     }
+    
     .button:hover {
-      background: #1558b0;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+      background: linear-gradient(45deg, #3730a3, #0284c7);
     }
+    
+    .button.secondary {
+      background: linear-gradient(45deg, #64748b, #475569);
+      box-shadow: 0 4px 15px rgba(100, 116, 139, 0.3);
+    }
+    
+    .button.secondary:hover {
+      background: linear-gradient(45deg, #475569, #334155);
+      box-shadow: 0 6px 20px rgba(100, 116, 139, 0.4);
+    }
+    
     .center {
       text-align: center;
+    }
+    
+    h2 {
+      color: #4f46e5;
+      margin: 2rem 0 1rem 0;
+      font-size: 1.8rem;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e2e8f0;
+      text-align: center;
+      color: #64748b;
+    }
+    
+    .social-links {
+      margin: 1rem 0;
+    }
+    
+    .social-links a {
+      margin: 0 0.5rem;
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    
+    .social-links a:hover {
+      color: #06b6d4;
+    }
+    
+    .completion-banner {
+      background: linear-gradient(45deg, #10b981, #059669);
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      
+      .container {
+        padding: 1.5rem;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .workshop-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .button {
+        display: block;
+        margin: 0.5rem 0;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Viceroy Cybersecurity Resources</h1>
-  <p>
-    This site highlights the resources I created and used during my time as a 
-    <strong>Viceroy Cybersecurity Scholar & Intern</strong> at 
-    Texas A&M University–San Antonio (2025). It serves as both an archive and a 
-    showcase of the materials that supported workshops, training sessions, and 
-    community engagement in cybersecurity.
-  </p>
+  <div class="container">
+    <div class="header">
+      <h1>🛡️ Viceroy Cybersecurity Resources</h1>
+      <p class="subtitle">Scholar & Intern Program | Texas A&M University–San Antonio</p>
+    </div>
 
-  <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/PER8BxE3Nhw" 
-    allowfullscreen>
-  </iframe>
+    <div class="completion-banner">
+      🎉 All Workshop Series Completed! 🎉
+    </div>
 
-  <div class="center">
-    <h2>📂 Full Repository</h2>
-    <a class="button" href="https://github.com/CisnerosCodes/VISEROY">View on GitHub</a>
+    <div class="intro">
+      <p>
+        Welcome to my comprehensive collection of cybersecurity workshop resources! 
+        During my time as a <strong>Viceroy Cybersecurity Scholar & Intern</strong> in 2025, 
+        I developed and delivered educational materials covering essential cybersecurity topics. 
+        This site serves as both an archive and showcase of these materials for the community.
+      </p>
+    </div>
+
+    <h2>🎯 Workshop Series</h2>
+    <div class="workshop-grid">
+      <div class="workshop-card">
+        <h3>Week 1: Network Reconnaissance</h3>
+        <p>Introduction to network discovery techniques and tools for cybersecurity professionals.</p>
+        <span class="status-badge completed">✅ Complete</span>
+      </div>
+      
+      <div class="workshop-card">
+        <h3>Week 2: Password Hacking 101</h3>
+        <p>Understanding password security, common attacks, and defensive strategies.</p>
+        <span class="status-badge completed">✅ Complete</span>
+      </div>
+      
+      <div class="workshop-card">
+        <h3>Week 3: Phishing for Admins</h3>
+        <p>Advanced phishing techniques and how administrators can protect their organizations.</p>
+        <span class="status-badge completed">✅ Complete</span>
+      </div>
+      
+      <div class="workshop-card">
+        <h3>Week 4: The Web is a Minefield</h3>
+        <p>Web application security vulnerabilities and mitigation strategies.</p>
+        <span class="status-badge completed">✅ Complete</span>
+      </div>
+    </div>
+
+    <h2>🎥 Featured Content</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/PER8BxE3Nhw" allowfullscreen></iframe>
+    </div>
+
+    <div class="center">
+      <h2>📂 Access All Resources</h2>
+      <a class="button" href="https://github.com/CisnerosCodes/VISEROY">📁 View Repository</a>
+      <a class="button secondary" href="https://github.com/CisnerosCodes/VISEROY/tree/main/resources">📚 Browse Materials</a>
+    </div>
+
+    <div class="footer">
+      <div class="social-links">
+        <a href="https://github.com/CisnerosCodes">GitHub</a> |
+        <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> |
+        <a href="mailto:your.email@example.com">Contact</a>
+      </div>
+      <p>© 2025 CisnerosCodes | Viceroy Cybersecurity Scholar Program</p>
+      <p><em>Empowering the next generation of cybersecurity professionals</em></p>
+    </div>
   </div>
 </body>
 </html>
