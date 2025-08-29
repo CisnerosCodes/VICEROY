@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software & Tools | Viceroy Cybersecurity Scholar Resources</title>
+  <meta name="description" content="Comprehensive showcase of cybersecurity tools and software used in the Viceroy Scholar program workshops">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 50%, #8b5cf6 100%);
+      min-height: 100vh;
+      color: #333;
+    }
+    
+    .container {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 32px rgba(79, 70, 229, 0.2);
+      border: 1px solid rgba(79, 70, 229, 0.1);
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    h1 {
+      color: #4f46e5;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(45deg, #4f46e5, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .subtitle {
+      color: #64748b;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+    
+    .intro {
+      background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #4f46e5;
+      margin: 2rem 0;
+    }
+    
+    .nav-breadcrumb {
+      background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      border: 1px solid #e2e8f0;
+    }
+    
+    .nav-breadcrumb a {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .nav-breadcrumb a:hover {
+      color: #06b6d4;
+    }
+    
+    .week-section {
+      margin: 3rem 0;
+      padding: 2rem;
+      background: linear-gradient(135deg, #fefefe, #f9fafb);
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    
+    .week-section h2 {
+      color: #4f46e5;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .week-number {
+      background: linear-gradient(45deg, #4f46e5, #06b6d4);
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    
+    .core-concepts {
+      background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+      padding: 1.2rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      border-left: 4px solid #06b6d4;
+    }
+    
+    .core-concepts h3 {
+      color: #06b6d4;
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .core-concepts p {
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+    
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .tool-card {
+      background: linear-gradient(135deg, #ffffff, #f8fafc);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .tool-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(45deg, #4f46e5, #06b6d4);
+    }
+    
+    .tool-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(79, 70, 229, 0.15);
+      border-color: #4f46e5;
+    }
+    
+    .tool-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .tool-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(45deg, #4f46e5, #06b6d4);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: white;
+      font-weight: bold;
+    }
+    
+    .tool-card h4 {
+      color: #4f46e5;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    
+    .tool-card p {
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    
+    .tool-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    
+    .tag {
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .tag.free {
+      background: linear-gradient(45deg, #10b981, #059669);
+      color: white;
+    }
+    
+    .tag.paid {
+      background: linear-gradient(45deg, #f59e0b, #d97706);
+      color: white;
+    }
+    
+    .tag.beginner {
+      background: linear-gradient(45deg, #06b6d4, #0891b2);
+      color: white;
+    }
+    
+    .tag.advanced {
+      background: linear-gradient(45deg, #8b5cf6, #7c3aed);
+      color: white;
+    }
+    
+    .tag.web {
+      background: linear-gradient(45deg, #ef4444, #dc2626);
+      color: white;
+    }
+    
+    .tag.network {
+      background: linear-gradient(45deg, #6366f1, #4f46e5);
+      color: white;
+    }
+    
+    .tool-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    
+    .tool-link {
+      padding: 0.5rem 1rem;
+      background: linear-gradient(45deg, #4f46e5, #06b6d4);
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    
+    .tool-link:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+      background: linear-gradient(45deg, #3730a3, #0284c7);
+    }
+    
+    .tool-link.secondary {
+      background: linear-gradient(45deg, #64748b, #475569);
+    }
+    
+    .tool-link.secondary:hover {
+      background: linear-gradient(45deg, #475569, #334155);
+    }
+    
+    .button {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      background: linear-gradient(45deg, #4f46e5, #06b6d4);
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 0.9rem;
+    }
+    
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+      background: linear-gradient(45deg, #3730a3, #0284c7);
+    }
+    
+    .button.secondary {
+      background: linear-gradient(45deg, #64748b, #475569);
+      box-shadow: 0 4px 15px rgba(100, 116, 139, 0.3);
+    }
+    
+    .button.secondary:hover {
+      background: linear-gradient(45deg, #475569, #334155);
+      box-shadow: 0 6px 20px rgba(100, 116, 139, 0.4);
+    }
+    
+    .center {
+      text-align: center;
+    }
+    
+    h2 {
+      color: #4f46e5;
+      margin: 2rem 0 1rem 0;
+      font-size: 1.8rem;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e2e8f0;
+      text-align: center;
+      color: #64748b;
+    }
+    
+    .social-links {
+      margin: 1rem 0;
+    }
+    
+    .social-links a {
+      margin: 0 0.5rem;
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    
+    .social-links a:hover {
+      color: #06b6d4;
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      
+      .container {
+        padding: 1.5rem;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .button {
+        display: block;
+        margin: 0.5rem 0;
+        text-align: center;
+      }
+      
+      .week-section {
+        padding: 1.5rem;
+      }
+      
+      .tool-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+      }
+      
+      .tool-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav-breadcrumb">
+      🏠 <a href="index.html">Home</a> / 🔧 Software & Tools
+    </div>
+
+    <div class="header">
+      <h1>🔧 Software & Tools Showcase</h1>
+      <p class="subtitle">Comprehensive Guide to Cybersecurity Tools Used in Viceroy Scholar Program</p>
+    </div>
+
+    <div class="intro">
+      <p>
+        Explore the comprehensive collection of cybersecurity tools and software used throughout the 
+        <strong>Viceroy Scholar program workshops</strong>. Each tool is organized by the week it was 
+        introduced, complete with descriptions, access links, and difficulty ratings. This showcase 
+        serves as a reference for anyone looking to replicate the workshops or build their own 
+        cybersecurity toolkit.
+      </p>
+    </div>
+
+    <!-- Week 1 -->
+    <div class="week-section">
+      <h2>
+        <span class="week-number">Week 1</span>
+        Can You Hear Me Now? – Network Sniffing & Recon
+      </h2>
+      
+      <div class="core-concepts">
+        <h3>🎯 Core Concepts</h3>
+        <p>TCP/IP protocols, port scanning, OSI model understanding, network reconnaissance techniques, passive vs active reconnaissance methodologies</p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">W</div>
+            <h4>Wireshark</h4>
+          </div>
+          <p>The world's most popular network protocol analyzer. Wireshark lets you see what's happening on your network at a microscopic level, making it essential for network troubleshooting and security analysis.</p>
+          <div class="tool-tags">
+            <span class="tag free">Free</span>
+            <span class="tag beginner">Beginner</span>
+            <span class="tag network">Network</span>
+          </div>
+          <div class="tool-links">
+            <a href="https://www.wireshark.org/" class="tool-link" target="_blank">Download</a>
+            <a href="https://www.wireshark.org/docs/" class="tool-link secondary" target="_blank">Documentation</a>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">N</div>
+            <h4>Nmap</h4>
+          </div>
+          <p>Network Mapper (Nmap) is a powerful network discovery and security auditing tool. Used by millions worldwide for network inventory, managing service upgrade schedules, and monitoring host availability.</p>
+          <div class="tool-tags">
+            <span class="tag free">Free</span>
+            <span class="tag beginner">Beginner</span>
+            <span class="tag network">Network</span>
+          </div>
+          <div class="tool-links">
+            <a href="https://nmap.org/" class="tool-link" target="_blank">Download</a>
+            <a href="https://nmap.org/book/" class="tool-link secondary" target="_blank">Guide</a>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">C</div>
+            <h4>CTFlearn</h4>
+          </div>
+          <p>An educational platform designed to help individuals learn cybersecurity through hands-on Capture The Flag (CTF) challenges. Perfect for practicing network reconnaissance skills in a safe environment.</p>
+          <div class="tool-tags">
+            <span class="tag free">Free</span>
+            <span class="tag beginner">Beginner</span>
+            <span class="tag web">Web</span>
+          </div>
+          <div class="tool-links">
+            <a href="https://ctflearn.com/" class="tool-link" target="_blank">Access Platform</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Week 2 -->
+    <div class="week-section">
+      <h2>
+        <span class="week-number">Week 2</span>
+        Password Cracking 101
+      </h2>
+      
+      <div class="core-concepts">
+        <h3>🎯 Core Concepts</h3>
+        <p>Hash functions and algorithms, password security policies, dictionary attacks, rainbow tables, brute force techniques, and password strength assessment</p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">CS</div>
+            <h4>CrackStation</h4>
+          </div>
+          <p>A free online hash lookup service that uses massive pre-computed lookup tables to crack password hashes. Supports MD5, SHA1, SHA256, and other hash types with billions of entries.</p>
+          <div class="tool-tags">
+            <span class="tag free">Free</span>
+            <span class="tag beginner">Beginner</span>
+            <span class="tag web">Web</span>
+          </div>
+          <div class="tool-links">
+            <a href="https://crackstation.net/" class="tool-link" target="_blank">Access Tool</a>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">H</div>
+            <h4>Hashcat</h4>
+          </div>
+          <p>Advanced GPU-accelerated password recovery tool supporting over 300 hash algorithms. Known as the world's fastest and most advanced password cracking utility, perfect for security professionals.</p>
+          <div class="tool-tags">
+            <span class="tag free">Free</span>
+            <span class="tag advanced">Advanced</span>
+            <span class="tag network">Network</span>
+          </div>
+          <div class="tool-links">
+            <a href="https://hashcat.net/hashcat/" class="tool-link" target="_blank">Download</a>
+            <a href="https://hashcat.net/wiki/" class="tool-link secondary" target="_blank">Wiki</a>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">JR</div>
+            <h4>John the Ripper</h4>
+          </div>
+          <p>A fast password cracker available for many operating systems. Primarily designed to detect weak Unix passwords, it has evolved to support hundreds of hash and cipher types.</p>
+          <div class="tool-tags">
+            <span class="tag free">Free</span>
+            <span class="tag advanced">Advanced</span>
+            <span class="tag network">Network</span>
+          </div>
+          <div class="tool-links">
+            <a href="https://www.openwall.com/john/" class="tool-link" target="_blank">Download</a>
+            <a href="https://www.openwall.com/john/doc/" class="tool-link secondary" target="_blank">Documentation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Week 3 -->
+    <div class="week-section">
+      <h2>
+        <span class="week-number">Week 3</span>
+        Phishing for Admins
+      </h2>
+      
+      <div class="core-concepts">
+        <h3>🎯 Core Concepts</h3>
+        <p>Social engineering techniques, email security protocols, phishing awareness training, email header analysis, and organizational security awareness</p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">📧</div>
+            <h4>Email Headers Analysis</h4>
+          </div>
+          <p>Learn to analyze email headers to identify phishing attempts, track email origins, and understand email authentication mechanisms like SPF, DKIM, and DMARC.</p>
+          <div class="tool-tags">
+            <span class="tag free">Free</span>
+            <span class="tag beginner">Beginner</span>
+            <span class="tag web">Web</span>
+          </div>
+          <div class="tool-links">
+            <a href="https://mxtoolbox.com/EmailHeaders.aspx" class="tool-link" target="_blank">MX Toolbox</a>
+            <a href="https://toolbox.googleapps.com/apps/messageheader/" class="tool-link secondary" target="_blank">Google Tool</a>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">PT</div>
+            <h4>PhishTool</h4>
+          </div>
+          <p>A comprehensive phishing email analysis platform that helps security teams quickly and efficiently analyze suspected phishing emails. Provides detailed threat intelligence and IOC extraction.</p>
+          <div class="tool-tags">
+            <span class="tag paid">Paid</span>
+            <span class="tag advanced">Advanced</span>
+            <span class="tag web">Web</span>
+          </div>
+          <div class="tool-links">
+            <a href="https://www.phishtool.com/" class="tool-link" target="_blank">Access Platform</a>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">🎨</div>
+            <h4>Canva</h4>
+          </div>
+          <p>Design platform used to create security awareness materials, phishing simulation templates, and educational content for training programs. Essential for creating engaging security education materials.</p>
+          <div class="tool-tags">
+            <span class="tag free">Free</span>
+            <span class="tag beginner">Beginner</span>
+            <span class="tag web">Web</span>
+          </div>
+          <div class="tool-links">
+            <a href="https://www.canva.com/" class="tool-link" target="_blank">Access Platform</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Week 4 -->
+    <div class="week-section">
+      <h2>
+        <span class="week-number">Week 4</span>
+        The Web is a Minefield
+      </h2>
+      
+      <div class="core-concepts">
+        <h3>🎯 Core Concepts</h3>
+        <p>OWASP Top 10 vulnerabilities, Cross-Site Scripting (XSS), SQL Injection fundamentals, web application security testing, and secure development practices</p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">DV</div>
+            <h4>DVWA</h4>
+          </div>
+          <p>Damn Vulnerable Web Application is a PHP/MySQL web application designed to be intentionally insecure. Perfect for security professionals to test their skills legally in a safe environment.</p>
+          <div class="tool-tags">
+            <span class="tag free">Free</span>
+            <span class="tag beginner">Beginner</span>
+            <span class="tag web">Web</span>
+          </div>
+          <div class="tool-links">
+            <a href="https://github.com/digininja/DVWA" class="tool-link" target="_blank">Download</a>
+            <a href="https://dvwa.co.uk/" class="tool-link secondary" target="_blank">Documentation</a>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">PA</div>
+            <h4>PortSwigger Web Academy</h4>
+          </div>
+          <p>Free online web security training from the creators of Burp Suite. Comprehensive labs covering all major web vulnerabilities with hands-on practice environments and detailed explanations.</p>
+          <div class="tool-tags">
+            <span class="tag free">Free</span>
+            <span class="tag beginner">Beginner</span>
+            <span class="tag web">Web</span>
+          </div>
+          <div class="tool-links">
+            <a href="https://portswigger.net/web-security" class="tool-link" target="_blank">Access Academy</a>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-icon">BS</div>
+            <h4>Burp Suite</h4>
+          </div>
+          <p>The leading toolkit for web application security testing. Used by security professionals worldwide for manual and automated security testing of web applications, APIs, and mobile applications.</p>
+          <div class="tool-tags">
+            <span class="tag free">Free</span>
+            <span class="tag paid">Paid Pro</span>
+            <span class="tag advanced">Advanced</span>
+            <span class="tag web">Web</span>
+          </div>
+          <div class="tool-links">
+            <a href="https://portswigger.net/burp" class="tool-link" target="_blank">Download</a>
+            <a href="https://portswigger.net/burp/documentation" class="tool-link secondary" target="_blank">Documentation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <h2>🏠 Navigation</h2>
+      <a class="button" href="index.html">← Back to Home</a>
+      <a class="button secondary" href="https://github.com/CisnerosCodes/VISEROY">📁 View Repository</a>
+    </div>
+
+    <div class="footer">
+      <div class="social-links">
+        <a href="https://github.com/CisnerosCodes">GitHub</a> |
+        <a href="https://www.linkedin.com/in/adrian-cisneros-cs/">LinkedIn</a> |
+        <a href="adrianbencisneros@gmail.com">Contact</a>
+      </div>
+      <p>© 2025 CisnerosCodes | Viceroy Cybersecurity Scholar Program</p>
+      <p><em>Empowering the next generation of cybersecurity professionals</em></p>
+    </div>
+  </div>
+</body>
+</html>
