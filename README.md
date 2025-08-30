@@ -61,7 +61,7 @@ This repository contains the complete collection of resources I developed during
 
 ## 🌐 Live Website
 
-Experience the full resource collection at: **[cisneroscodes.github.io/VISEROY](https://cisneroscodes.github.io/VISEROY/)**
+Experience the full resource collection at: **[cisneroscodes.github.io/VISEROY](https://cisneroscodes.github.io/VICEROY/)**
 
 ### Website Features
 - 📊 Interactive workshop showcase
