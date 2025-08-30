@@ -20,10 +20,10 @@ This repository contains the complete collection of resources I developed during
 
 | Week | Topic | Focus Area | Status |
 |------|--------|------------|---------|
-| **Week 1** | [Network Reconnaissance](https://cisneroscodes.github.io/VISEROY/) | Port scanning, network discovery, OSINT | ✅ Complete |
-| **Week 2** | [Password Security](https://cisneroscodes.github.io/VISEROY/) | Password attacks, hash cracking, security | ✅ Complete |
-| **Week 3** | [Phishing Tactics](https://cisneroscodes.github.io/VISEROY/) | Social engineering, email security | ✅ Complete |
-| **Week 4** | [Web Application Security](https://cisneroscodes.github.io/VISEROY/) | OWASP Top 10, XSS, SQL injection | ✅ Complete |
+| **Week 1** | [Network Reconnaissance](https://cisneroscodes.github.io/VICEROY/) | Port scanning, network discovery, OSINT | ✅ Complete |
+| **Week 2** | [Password Security](https://cisneroscodes.github.io/VICEROY/) | Password attacks, hash cracking, security | ✅ Complete |
+| **Week 3** | [Phishing Tactics](https://cisneroscodes.github.io/VICEROY/) | Social engineering, email security | ✅ Complete |
+| **Week 4** | [Web Application Security](https://cisneroscodes.github.io/VICEROY/) | OWASP Top 10, XSS, SQL injection | ✅ Complete |
 
 ## 🔧 Tools & Technologies Covered
 
@@ -95,9 +95,9 @@ This program was designed to:
 
 ## 🚀 Quick Start
 
-1. **Explore the website**: Visit [cisneroscodes.github.io/VISEROY](https://cisneroscodes.github.io/VISEROY/)
+1. **Explore the website**: Visit [cisneroscodes.github.io/VISEROY](https://cisneroscodes.github.io/VICEROY/)
 2. **Browse workshop materials**: Check the `/resources` directory
-3. **Access tool guides**: Visit the [Software & Tools page](https://cisneroscodes.github.io/VISEROY/software.html)
+3. **Access tool guides**: Visit the [Software & Tools page](https://cisneroscodes.github.io/VICEROY/software.html)
 4. **Follow along**: Use the structured weekly progression
 
 ## 🤝 Usage & Contributions
