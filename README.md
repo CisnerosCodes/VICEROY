@@ -1,4 +1,4 @@
-# 🛡️ Viseroy Cybersecurity Resources
+# 🛡️ Viceroy Cybersecurity Resources
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Site-blue)](https://cisneroscodes.github.io/VISEROY/)
 [![Workshop Status](https://img.shields.io/badge/Workshop%20Series-Completed-success)](https://cisneroscodes.github.io/VISEROY/)
